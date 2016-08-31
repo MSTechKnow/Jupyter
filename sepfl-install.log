@@ -1,0 +1,167 @@
+Applied sticky-bit to directory /opt/Symantec/tmp
+Exported env variable PROD_ROOT_TMP_DIR: /opt/Symantec/tmp
+Wed Aug 10 11:43:48 IST 2016: Starting to install Symantec Endpoint Protection for Linux
+FromProduct=
+ToProduct=12.1.7004.6500
+Wed Aug 10 11:43:48 IST 2016: Performing pre-check...
+Searching /usr/java for java...
+find: `/usr/java': No such file or directory
+Searching /usr/local for java...
+/usr/local/java/jre1.8.0_77/bin/java
+found java: /usr/local/java/jre1.8.0_77/bin/java
+Wed Aug 10 11:43:49 IST 2016: Info:	SNI compatible ui is required for System Tray support on this platform
+Wed Aug 10 11:43:49 IST 2016: Warning:	X11 libraries are missing, GUI component will not be installed!
+Wed Aug 10 11:43:49 IST 2016: Pre-check succeeded
+Wed Aug 10 11:43:50 IST 2016: Begin installing virus protection component
+Wed Aug 10 11:43:50 IST 2016: Performing pre-check...
+Found /root/SepPrecheck.cfg, no need to perform pre-check
+Wed Aug 10 11:43:50 IST 2016: Pre-check is successful
+Wed Aug 10 11:43:53 IST 2016: Virus protection component installed successfully
+Wed Aug 10 11:43:53 IST 2016: Begin installing Auto-Protect component
+Wed Aug 10 11:43:54 IST 2016: Performing pre-check...
+Found /root/SepPrecheck.cfg, no need to perform pre-check
+Wed Aug 10 11:43:54 IST 2016: Pre-check is successful
+symap: not currently loaded
+symev: unable to load kernel support module (UNSUPPORTED-OS-ub-ST-14-3.19.0-25-generic-x86_64)
+invoke-rc.d: initscript autoprotect, action "restart" failed.
+Wed Aug 10 11:43:55 IST 2016: Auto-Protect component installed successfully
+Wed Aug 10 11:43:55 IST 2016: Begin installing GUI component
+Wed Aug 10 11:43:56 IST 2016: Performing pre-check...
+Found /root/SepPrecheck.cfg, no need to perform pre-check
+Wed Aug 10 11:43:56 IST 2016: Pre-check is successful
+cat: /proc//environ: No such file or directory
+Wed Aug 10 11:43:59 IST 2016: GUI component installed successfully
+Wed Aug 10 11:43:59 IST 2016: Begin installing LiveUpdate component
+Wed Aug 10 11:43:59 IST 2016: Performing pre-check...
+Found /root/SepPrecheck.cfg, no need to perform pre-check
+Wed Aug 10 11:43:59 IST 2016: Pre-check is successful
+Wed Aug 10 11:44:05 IST 2016: LiveUpdate component installed successfully
+Wed Aug 10 11:44:05 IST 2016: getenforce is not installed, SELinux is not enabled, skip setting selinux attribute.
+12.1.7004.6500 is newer than , need to copy setup.ini & setAid.ini
+Succeed to copy /opt/Spacewalk_AV/./Configuration/setup.ini to /etc/symantec/setup.ini
+Succeed to copy /opt/Spacewalk_AV/./Configuration/setAid.ini to /etc/symantec/setAid.ini
+'/etc/symantec/sylink.xml' doesn't exist, need copy it
+Succeed to copy '/opt/Spacewalk_AV/./Configuration/sylink.xml' to '/etc/symantec/sylink.xml'.
+Succeed to copy /opt/Spacewalk_AV/./Configuration/serdef.dat to /var/symantec/serdef.dat
+Succeed to copy /opt/Spacewalk_AV/./Configuration/sep.slf to /etc/symantec/sep.slf
+Starting AP: symev: unable to load kernel support module (UNSUPPORTED-OS-ub-ST-14-3.19.0-25-generic-x86_64)
+check whether need to install legacy package.
+driver is not loaded yet, need legacy kernel package
+Wed Aug 10 11:44:05 IST 2016: Begin installing legacy Auto-Protect component
+Selecting previously unselected package savap-legacy.
+(Reading database ... 167791 files and directories currently installed.)
+Preparing to unpack .../Legacy/sepap-legacy-amd64.deb ...
+Performing pre-check...
+Wed Aug 10 11:44:05 IST 2016: Performing pre-check...
+Found /root/SepPrecheck.cfg, no need to perform pre-check
+Pre-check is successful
+Wed Aug 10 11:44:05 IST 2016: Pre-check is successful
+Unpacking savap-legacy (12.1.7004-6500) ...
+Setting up savap-legacy (12.1.7004-6500) ...
+symap: not currently loaded
+symev: unable to load kernel support module (UNSUPPORTED-OS-ub-ST-14-3.19.0-25-generic-x86_64)
+invoke-rc.d: initscript autoprotect, action "restart" failed.
+Wed Aug 10 11:44:06 IST 2016: Legacy Auto-Protect component installed successfully
+try to start autoprotect again
+Starting AP: symev: unable to load kernel support module (UNSUPPORTED-OS-ub-ST-14-3.19.0-25-generic-x86_64)
+the current kernel 3.19.0-25-generic is not supported yet
+Wed Aug 10 11:44:06 IST 2016: Pre-compiled Auto-Protect kernel modules are not loaded yet, need compile them from source code
+ap-kernelmodule-12.1.7004-6500/
+ap-kernelmodule-12.1.7004-6500/sym.ira/
+ap-kernelmodule-12.1.7004-6500/bin.ira/
+ap-kernelmodule-12.1.7004-6500/kernelsource/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/xdr4.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/nfsd.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/cache.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/nfsfh.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/xdr.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/state.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux2.6.33/fs/nfsd/xdr3.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/xdr4.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/nfsd.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/cache.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/nfsfh.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/xdr.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/state.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/xdr3.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/_nfsfh.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/_stats.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/vfs.h
+ap-kernelmodule-12.1.7004-6500/kernelsource/linux3.10.0/fs/nfsd/_export.h
+ap-kernelmodule-12.1.7004-6500/README
+ap-kernelmodule-12.1.7004-6500/COPYING
+ap-kernelmodule-12.1.7004-6500/build.sh
+ap-kernelmodule-12.1.7004-6500/symev/
+ap-kernelmodule-12.1.7004-6500/symev/hnfs.h
+ap-kernelmodule-12.1.7004-6500/symev/symevrm.c
+ap-kernelmodule-12.1.7004-6500/symev/symev.c
+ap-kernelmodule-12.1.7004-6500/symev/utils.c
+ap-kernelmodule-12.1.7004-6500/symev/syscalls.c
+ap-kernelmodule-12.1.7004-6500/symev/fileops.c
+ap-kernelmodule-12.1.7004-6500/symev/Makefile
+ap-kernelmodule-12.1.7004-6500/symev/sym_procfs.c
+ap-kernelmodule-12.1.7004-6500/symev/symev.h
+ap-kernelmodule-12.1.7004-6500/symev/fileops.h
+ap-kernelmodule-12.1.7004-6500/symev/hnfs.c
+ap-kernelmodule-12.1.7004-6500/lib.ira/
+ap-kernelmodule-12.1.7004-6500/lib.ira/symap-core-x86_64.o
+ap-kernelmodule-12.1.7004-6500/lib.ira/symap-core.o
+ap-kernelmodule-12.1.7004-6500/lib.ida/
+ap-kernelmodule-12.1.7004-6500/bin.ida/
+ap-kernelmodule-12.1.7004-6500/VERSION
+ap-kernelmodule-12.1.7004-6500/include/
+ap-kernelmodule-12.1.7004-6500/include/vpregistry.h
+ap-kernelmodule-12.1.7004-6500/include/symprocfs.h
+ap-kernelmodule-12.1.7004-6500/include/symap-core.h
+ap-kernelmodule-12.1.7004-6500/include/symkutil.h
+ap-kernelmodule-12.1.7004-6500/include/symevl.h
+ap-kernelmodule-12.1.7004-6500/include/symap_cfg.h
+ap-kernelmodule-12.1.7004-6500/include/symtypes.h
+ap-kernelmodule-12.1.7004-6500/include/commonids.h
+ap-kernelmodule-12.1.7004-6500/symap/
+ap-kernelmodule-12.1.7004-6500/symap/linuxmod.c
+ap-kernelmodule-12.1.7004-6500/symap/Makefile
+Wed Aug 10 11:44:28 IST 2016: Build Auto-Protect kernel modules from source code successfully
+Already running
+symcfgd is started successfully.
+Already running
+rtvscand is started successfully.
+Succeed to enable ap
+AP status: Malfunctioning
+SMC daemon already running
+smcd is started successfully.
+/opt/Symantec/autoprotect /opt/Spacewalk_AV
+succeed to make link /lib/modules/3.19.0-25-generic/kernel/drivers/char/symev_custom_3_19_0_25_generic_x86_64.ko
+succeed to make link /lib/modules/3.19.0-25-generic/kernel/drivers/char/symap_custom_3_19_0_25_generic_x86_64.ko
+/opt/Spacewalk_AV
+Wed Aug 10 11:44:29 IST 2016: Installation completed
+Wed Aug 10 11:44:29 IST 2016: =============================================================
+Wed Aug 10 11:44:29 IST 2016: Daemon status:
+Wed Aug 10 11:44:29 IST 2016: symcfgd				[running]
+Wed Aug 10 11:44:29 IST 2016: rtvscand			[running]
+Wed Aug 10 11:44:29 IST 2016: smcd				[running]
+Wed Aug 10 11:44:29 IST 2016: =============================================================
+Wed Aug 10 11:44:29 IST 2016: Drivers loaded:
+Wed Aug 10 11:44:29 IST 2016: symap_custom_3_19_0_25_generic_x86_64
+symev_custom_3_19_0_25_generic_x86_64
+Wed Aug 10 11:44:29 IST 2016: =============================================================
+Wed Aug 10 11:44:30 IST 2016: Auto-Protect starting
+AP status: Malfunctioning in 1 time.
+Wed Aug 10 11:44:31 IST 2016: Protection status:
+Wed Aug 10 11:44:31 IST 2016: Definition:	Waiting for update.
+Wed Aug 10 11:44:31 IST 2016: AP:		Malfunctioning
+Wed Aug 10 11:44:31 IST 2016: =============================================================
+Wed Aug 10 11:44:31 IST 2016: The log files for installation of Symantec Endpoint Protection for Linux are under ~/:
+Wed Aug 10 11:44:31 IST 2016: sepfl-install.log
+Wed Aug 10 11:44:31 IST 2016: sep-install.log
+Wed Aug 10 11:44:31 IST 2016: sepap-install.log
+Wed Aug 10 11:44:31 IST 2016: sepap-legacy-install.log
+Wed Aug 10 11:44:31 IST 2016: sepui-install.log
+Wed Aug 10 11:44:31 IST 2016: sepjlu-install.log
+Wed Aug 10 11:44:31 IST 2016: sepfl-kbuild.log

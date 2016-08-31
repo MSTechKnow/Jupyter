@@ -1,0 +1,38 @@
+======================================================
+Pre-install begin: Wed Aug 10 11:43:50 IST 2016
+Performing first install pre-install actions
+Creating /etc/Symantec.conf file
+Pre-install end: Wed Aug 10 11:43:51 IST 2016
+changed ownership of ‘/opt/Symantec/bin/navdefutil’ from root:root to :avdefs
+changed ownership of ‘/opt/Symantec/virusdefs/temp’ from root:root to :avdefs
+changed ownership of ‘/opt/Symantec/virusdefs’ from root:root to :avdefs
+Post-install begin: Wed Aug 10 11:43:52 IST 2016
+Performing new install post-install actions
+Stopping symcfgd: [70G[31m[1mfailed[m
+
+cannot find /opt/Spacewalk_AV/./Repository/linuxdefs.zip
+ Adding system startup for /etc/init.d/symcfgd ...
+   /etc/rc0.d/K45symcfgd -> ../init.d/symcfgd
+   /etc/rc1.d/K45symcfgd -> ../init.d/symcfgd
+   /etc/rc6.d/K45symcfgd -> ../init.d/symcfgd
+   /etc/rc2.d/S22symcfgd -> ../init.d/symcfgd
+   /etc/rc3.d/S22symcfgd -> ../init.d/symcfgd
+   /etc/rc5.d/S22symcfgd -> ../init.d/symcfgd
+ Adding system startup for /etc/init.d/rtvscand ...
+   /etc/rc0.d/K40rtvscand -> ../init.d/rtvscand
+   /etc/rc1.d/K40rtvscand -> ../init.d/rtvscand
+   /etc/rc6.d/K40rtvscand -> ../init.d/rtvscand
+   /etc/rc2.d/S98rtvscand -> ../init.d/rtvscand
+   /etc/rc3.d/S98rtvscand -> ../init.d/rtvscand
+   /etc/rc5.d/S98rtvscand -> ../init.d/rtvscand
+ Adding system startup for /etc/init.d/smcd ...
+   /etc/rc0.d/K35smcd -> ../init.d/smcd
+   /etc/rc1.d/K35smcd -> ../init.d/smcd
+   /etc/rc6.d/K35smcd -> ../init.d/smcd
+   /etc/rc2.d/S99smcd -> ../init.d/smcd
+   /etc/rc3.d/S99smcd -> ../init.d/smcd
+   /etc/rc5.d/S99smcd -> ../init.d/smcd
+symcfgd should not start at this time.
+rtvscand should not start at this time.
+smcd should not start at this time.
+Post-install end: Wed Aug 10 11:43:52 IST 2016

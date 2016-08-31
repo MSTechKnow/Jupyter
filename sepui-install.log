@@ -1,0 +1,98 @@
+======================================================
+Pre-install begin: Wed Aug 10 11:43:55 IST 2016
+This package is installing a UI designed to interact with Ubuntu 14.04+ System Tray
+Package: libc6
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 10491
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: eglibc
+Version: 2.19-0ubuntu6.9
+Replaces: libc6-amd64
+Provides: glibc-2.19-1
+Depends: libgcc1
+Suggests: glibc-doc, debconf | debconf-2.0, locales
+Breaks: hurd (<< 1:0.5.git20140203-1), lsb-core (<= 3.2-27), nscd (<< 2.19)
+Conflicts: prelink (<= 0.0.20090311-1), tzdata (<< 2007k-1), tzdata-etch
+Conffiles:
+ /etc/ld.so.conf.d/x86_64-linux-gnu.conf 593ad12389ab2b6f952e7ede67b8fbbf
+Description: Embedded GNU C Library: Shared libraries
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C library
+ and the standard math library, as well as many others.
+Homepage: http://www.eglibc.org
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Package: libx11-6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1509
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: libx11
+Version: 2:1.6.2-1ubuntu2
+Depends: libc6 (>= 2.15), libxcb1 (>= 1.2), libx11-data
+Pre-Depends: multiarch-support
+Description: X11 client-side library
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Package: libqtcore4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 5053
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1
+Depends: qtcore4-l10n, libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.22.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: libicu48, libthai0
+Conffiles:
+ /etc/xdg/Trolltech.conf c577e8340ca5ff8267dd3666f46171a5
+Description: Qt 4 core module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtCore module contains core non-GUI functionality.
+Homepage: http://qt-project.org/
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Package: libqtgui4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 12714
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Architecture: amd64
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1
+Depends: fontconfig, libaudio2, libc6 (>= 2.15), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), libice6 (>= 1:1.0.0), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libqt4-declarative (= 4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1), libqtcore4 (= 4:4.8.5+git192-g085f851+dfsg-2ubuntu4.1), libsm6, libstdc++6 (>= 4.1.1), libtiff5 (>= 4.0.3), libx11-6 (>= 2:1.2.99.901), libxext6, libxi6 (>= 2:1.2.99.4), libxrender1, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Recommends: libcups2
+Suggests: qt4-qtconfig
+Description: Qt 4 GUI module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtGui module extends QtCore with GUI functionality.
+Homepage: http://qt-project.org/
+Original-Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Pre-install end: Wed Aug 10 11:43:56 IST 2016
+Unable to find system tray from root context. Please start Symantec Endpoint Protection UI manually or wait until next reboot.
+Post-install begin: Wed Aug 10 11:43:57 IST 2016
+Performing new install post-install actions
+Post-install end: Wed Aug 10 11:43:57 IST 2016

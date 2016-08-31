@@ -1,0 +1,56 @@
+Wed Aug 10 11:44:06 IST 2016: starting to build kernel modules of SEP for Linux
+Kernel release not specified. Build kernel modules for current kernel version 3.19.0-25-generic
+Kernel source directory not specified. Use default /lib/modules/3.19.0-25-generic/build
+make -C /lib/modules/3.19.0-25-generic/build M=/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev MODVERDIR=/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/.tmp_versions-custom-3.19.0-25-generic-x86_64 modules
+make[1]: Entering directory `/usr/src/linux-headers-3.19.0-25-generic'
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symev.o
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symev.c: In function ‘sym_filename_str’:
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symev.c:176:53: warning: return discards ‘const’ qualifier from pointer target type [enabled by default]
+ static char* sym_filename_str(sym_filename_t* fn) { return fn==NULL? NULL: fn->name; }
+                                                     ^
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/syscalls.o
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/syscalls.c: In function ‘get_ia32_from_interrupt_table’:
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/syscalls.c:124:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         ia32_sct = (void **)*(unsigned *)(p+3);
+                    ^
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/fileops.o
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/hnfs.o
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/utils.o
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/sym_procfs.o
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/sym_procfs.c: In function ‘sym_procfs_fopread’:
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/sym_procfs.c:112:1: warning: the frame size of 4112 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+  LD [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symev_custom_3_19_0_25_generic_x86_64.o
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symevrm.o
+  LD [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symevrm_custom_3_19_0_25_generic_x86_64.o
+  Building modules, stage 2.
+  MODPOST 2 modules
+  CC      /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symev_custom_3_19_0_25_generic_x86_64.mod.o
+  LD [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symev_custom_3_19_0_25_generic_x86_64.ko
+  CC      /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symevrm_custom_3_19_0_25_generic_x86_64.mod.o
+  LD [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/symevrm_custom_3_19_0_25_generic_x86_64.ko
+make[1]: Leaving directory `/usr/src/linux-headers-3.19.0-25-generic'
+cp symev_custom_3_19_0_25_generic_x86_64.ko /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/bin.ira/symev-custom-3.19.0-25-generic-x86_64.ko
+cp symevrm_custom_3_19_0_25_generic_x86_64.ko /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/bin.ira/.symevrm-custom-3.19.0-25-generic-x86_64.ko
+cp /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symev/Module.symvers Module.symvers-custom-3.19.0-25-generic-x86_64
+rm -rf Module.symvers
+cp ../symev/Module.symvers-custom-3.19.0-25-generic-x86_64 Module.symvers
+make -C /lib/modules/3.19.0-25-generic/build M=/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap MODVERDIR=/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/.tmp_versions-custom-3.19.0-25-generic-x86_64 modules
+make[1]: Entering directory `/usr/src/linux-headers-3.19.0-25-generic'
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/linuxmod.o
+  CC [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/../symev/sym_procfs.o
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/../symev/sym_procfs.c: In function ‘sym_procfs_fopread’:
+/opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/../symev/sym_procfs.c:112:1: warning: the frame size of 4112 bytes is larger than 1024 bytes [-Wframe-larger-than=]
+ }
+ ^
+  LD [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/symap_custom_3_19_0_25_generic_x86_64.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/symap_custom_3_19_0_25_generic_x86_64.mod.o
+  LD [M]  /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/symap/symap_custom_3_19_0_25_generic_x86_64.ko
+make[1]: Leaving directory `/usr/src/linux-headers-3.19.0-25-generic'
+cp symap_custom_3_19_0_25_generic_x86_64.ko /opt/Spacewalk_AV/src/ap-kernelmodule-12.1.7004-6500/bin.ira/symap-custom-3.19.0-25-generic-x86_64.ko
+Wed Aug 10 11:44:17 IST 2016: Build succeeded
+succeed to make link /lib/modules/3.19.0-25-generic/kernel/drivers/char/symev_custom_3_19_0_25_generic_x86_64.ko
+succeed to make link /lib/modules/3.19.0-25-generic/kernel/drivers/char/symap_custom_3_19_0_25_generic_x86_64.ko

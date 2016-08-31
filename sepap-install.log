@@ -1,0 +1,20 @@
+======================================================
+Pre-install begin: Wed Aug 10 11:43:54 IST 2016
+Performing first install pre-install actions
+groupadd: group 'avdefs' already exists
+Pre-install end: Wed Aug 10 11:43:54 IST 2016
+Post-install begin: Wed Aug 10 11:43:54 IST 2016
+Performing new install post-install actions
+ Adding system startup for /etc/init.d/autoprotect ...
+   /etc/rc0.d/K95autoprotect -> ../init.d/autoprotect
+   /etc/rc1.d/K95autoprotect -> ../init.d/autoprotect
+   /etc/rc6.d/K95autoprotect -> ../init.d/autoprotect
+   /etc/rc2.d/S21autoprotect -> ../init.d/autoprotect
+   /etc/rc3.d/S21autoprotect -> ../init.d/autoprotect
+   /etc/rc5.d/S21autoprotect -> ../init.d/autoprotect
+check and remove old drivers
+.symevrm: unable to load kernel support module (UNSUPPORTED-OS-ub-ST-14-3.19.0-25-generic-x86_64)
+Stopping AP: Starting AP: symcfgd should not restart at this time.
+rtvscand should not restart at this time.
+smcd should not restart at this time.
+Post-install end: Wed Aug 10 11:43:54 IST 2016

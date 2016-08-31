@@ -1,0 +1,11 @@
+======================================================
+Pre-install begin: Wed Aug 10 11:44:05 IST 2016
+Performing first install pre-install actions
+groupadd: group 'avdefs' already exists
+Pre-install end: Wed Aug 10 11:44:05 IST 2016
+Post-install begin: Wed Aug 10 11:44:06 IST 2016
+Performing new install post-install actions
+Stopping AP: Starting AP: symcfgd should not restart at this time.
+rtvscand should not restart at this time.
+smcd should not restart at this time.
+Post-install end: Wed Aug 10 11:44:06 IST 2016

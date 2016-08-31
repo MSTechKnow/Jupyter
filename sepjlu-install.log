@@ -1,0 +1,38 @@
+======================================================
+Pre-install begin: Wed Aug 10 11:43:59 IST 2016
+Stopping smcd: [70G[31m[1mfailed[m
+
+Performing first install pre-install actions
+groupadd: group 'avdefs' already exists
+Pre-install end: Wed Aug 10 11:43:59 IST 2016
+Post-install begin: Wed Aug 10 11:44:00 IST 2016
+JAVA_HOME=/usr/local/java/jre1.8.0_77/bin/java
+Initializing the log file: /tmp/JLU-Log/JavaLiveUpdate-Install.log
+trying to write into log file
+Linux 3.19.0-25-generic
+Java Version 1.8.0_77.
+Java LiveUpdate version 3.10.2 Build 9.
+Extracted out unixinstall.sh to /opt/Symantec/tmp/1470809641054/unixinstall.sh.
+Extracted out unixuninstall.sh to /opt/Symantec/tmp/1470809641054/unixuninstall.sh.
+Extracted out liveupdate.conf to /opt/Symantec/tmp/1470809641054/liveupdate.conf.
+Extracted out bcprov-jdk15on-148.jar to /opt/Symantec/tmp/1470809641054/bcprov-jdk15on-148.jar.
+Copied /opt/Symantec/LiveUpdate/jlu.jar to /opt/Symantec/tmp/1470809641054/jlu-3.10.2.9.jar.
+Trying to load jar file from /opt/Symantec/tmp/1470809641054/bcprov-jdk15on-148.jar
+Deleting file /opt/Symantec/tmp/1470809641054/liveupdate.conf
+Deleting file /opt/Symantec/tmp/1470809641054/bcprov-jdk15on-148.jar
+Deleting file /opt/Symantec/tmp/1470809641054/jlu-3.10.2.9.jar
+Deleting file /opt/Symantec/tmp/1470809641054/unixinstall.sh
+Deleting file /opt/Symantec/tmp/1470809641054/unixuninstall.sh
+Deleting directory /opt/Symantec/tmp/1470809641054.
+The Java LiveUpdate installation completed successfully.
+Java LiveUpdate installer has exited with return code 0
+### End of Install ###
+
+
+
+Return code = 0
+Trying to load jar file from /opt/Symantec/LiveUpdate/bcprov-jdk15on-148.jar
+Trying to load jar file from /opt/Symantec/LiveUpdate/bcprov-jdk15on-148.jar
+Product information is updated in product inventory.
+smcd should not start at this time.
+Post-install end: Wed Aug 10 11:44:04 IST 2016
